@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beautiful landscapes and rich history of the Republic of Moldova.">
     <title>The Republic of Moldova</title>
     <style>
         body {
@@ -13,24 +14,35 @@
             align-items: center; 
             justify-content: flex-start; 
             height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-top: 20px;
         }
         h1 { 
             color: #333; 
-            margin-top: 20px; 
         }
         h2 { 
             color: rgba(253, 2, 2, 0.53); 
         }
         .custom-button {
             background: rgb(5, 202, 81); 
-            color: #000000; 
+            color: #000; 
             border: none; 
             padding: 10px 15px; 
             cursor: pointer; 
-            position: fixed; /* fixed position to follow wile scroling */
+            position: fixed; 
             top: 10px; 
             right: 10px; 
             border-radius: 15px;
+            transition: background 0.3s;
+        }
+        .custom-button:hover {
+            background: rgb(3, 150, 60); /* darker shade on hover */
+        }
+        main {
+            text-align: center; 
+            padding: 20px;
         }
         img { 
             max-width: 100%; 
@@ -40,16 +52,18 @@
     </style>
 </head>
 <body>
-    <button class="custom-button" onclick="window.open('https://en.wikipedia.org/wiki/Moldova', '_blank')">More Info</button>
-    <h1>The Republic of Moldova</h1>
-    <h2>Discover Moldova</h2>
-    <p>Moldova is a small country in Eastern Europe, known for its landscapes and rich history.</p>
-    <img src="https://t3.ftcdn.net/jpg/07/86/91/94/360_F_786919487_BcKNA9gTqiLT0iB5o1quHZCfiMLUWQOG.jpg" alt="Image of Moldova">
-    <p>As you know already, the Republic of Moldova is located in Eastern Europe.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/European_Regions_EuroVoc.png/260px-European_Regions_EuroVoc.png" alt="Image of Europe">
-    <p>The thing that Moldova is known for is its wines.
-         It has a huge collection of wines in "Milestii Mici," which is a big underground cellar that holds thousands of wine bottles and types.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwib127dhe7MTo-xEoD2uZ0ejNnnDddeAz5w&s" alt="Image of the Cellar">
-
+    <header>
+        <button class="custom-button" onclick="window.open('https://en.wikipedia.org/wiki/Moldova', '_blank')">More Info</button>
+        <h1>The Republic of Moldova</h1>
+        <h2>Discover Moldova</h2>
+    </header>
+    <main>
+        <p>Moldova is a small country in Eastern Europe, known for its landscapes and rich history.</p>
+        <img src="https://t3.ftcdn.net/jpg/07/86/91/94/360_F_786919487_BcKNA9gTqiLT0iB5o1quHZCfiMLUWQOG.jpg" alt="Scenic landscape of Moldova">
+        <p>As you know already, the Republic of Moldova is located in Eastern Europe.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/European_Regions_EuroVoc.png/260px-European_Regions_EuroVoc.png" alt="Map of Europe highlighting Moldova">
+        <p>The thing that Moldova is known for is its wines. It has a huge collection of wines in "Milestii Mici," which is a big underground cellar that holds thousands of wine bottles and types.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwib127dhe7MTo-xEoD2uZ0ejNnnDddeAz5w&s" alt="Wine cellar in Milestii Mici">
+    </main>
 </body>
 </html>
