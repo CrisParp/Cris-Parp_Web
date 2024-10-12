@@ -13,7 +13,7 @@
             flex-direction: column; 
             align-items: center; 
             justify-content: flex-start; 
-            height: 100vh;
+            height: auto; /* Changed to auto for scrollable content */
             font-family: Arial, sans-serif;
             color: #2F4F4F; /* Dark text for day */
             transition: background 0.5s, color 0.5s; /* Smooth transition */
@@ -38,11 +38,12 @@
             border: none; 
             padding: 10px 15px; 
             cursor: pointer; 
-            position: fixed; 
+            position: fixed; /* Fixed position for More Info */
             top: 10px; 
             right: 10px; 
             border-radius: 15px;
             transition: background 0.3s, color 0.3s;
+            font-size: 16px; /* Larger font size */
         }
         .custom-button:hover {
             background: #008080; /* Darker Teal on hover */
@@ -52,13 +53,14 @@
             background: #FFD700; /* Gold */
             color: #000; 
             border: none; 
-            padding: 10px 15px; 
+            padding: 8px 12px; /* Smaller padding */
             cursor: pointer; 
-            position: fixed; 
+            position: absolute; /* Change to absolute */
             top: 10px; 
             left: 10px; 
             border-radius: 15px;
             transition: background 0.5s, color 0.5s; /* Smooth transition */
+            font-size: 14px; /* Smaller font size */
         }
         main {
             text-align: center; 
